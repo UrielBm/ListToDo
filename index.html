@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.flaticon.es/svg/static/icons/svg/716/716832.svg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ListToDo</title>
+</head>
+<body>
+    <header class="wrapper-header">
+        <h1 class="title">¿Qué debería hacer hoy?</h1>
+        <label class="wrapper-inputs">
+        <input class="input" id="inputData" placeholder="Escribe alguna tarea..." onkeydown="handleAddEnter(event)"/><button class="buton-agregar" onclick="handleAddClick()">Agregar</button>
+        </label>
+    </header>
+    <main class="wrapper-list">
+        <h2 class="title-list">Tareas Pendientes.</h2>
+        <ul class="wrapperListItem" id="wrapperListToDo">
+        </ul>
+    </main>
+</body>
+<script src="./js/index.js"></script>
+</html>
